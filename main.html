@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<style type="text/css">
+.subject {
+    margin-bottom: 10px;
+}
+input:hover {
+    cursor: pointer;
+}
+</style>
+<script>
+def read_form(){
+    var subjects = ["BioHL","BioSL","ChemHL","ChemSL","EcoSL","GeoHL","GeoSL","CSHL","CSSL","BMHL","BMSL","ChiLLHL","ChiB","TOEFL","MathEx","MathAASL","EngA","EngBHL","PsySL","VA"];
+    var data = "";
+    for (var i=0;i<subjects.length;i++):
+        i = subjects[i];
+        el = getElementById(i);
+        data.i + ':';
+        if el.element.value is not None:
+            data += '1\n'
+        else:
+            data += '0\n'
+}
+
+
+</script>
+</head>
+<body>
+<form id="form" onclick="">
+<div class="subject">
+<input type="checkbox" class='py-input' id="BioHL">生物HL
+<input type="checkbox" class='py-input' id="BioSL">生物SL
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="ChemHL">化学HL
+<input type="checkbox" class='py-input' id="ChemSL">化学SL
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="EcoHL1">经济HL1
+<input type="checkbox" class='py-input' id="EcoHL2">经济HL2
+<input type="checkbox" class='py-input' id="EcoSL">经济SL
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="GeoHL">地理HL
+<input type="checkbox" class='py-input' id="GeoSL">地理SL
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="PhyHL1">物理HL1
+<input type="checkbox" class='py-input' id="PhyHL2">物理HL2
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="CSHL">计算机HL
+<input type="checkbox" class='py-input' id="CSSL">计算机SL
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="BMHL">商管HL
+<input type="checkbox" class='py-input' id="BMSL">商管SL
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="ChiLLHL">中文HL
+<input type="checkbox" class='py-input' id="ChiLLSL1">中文SL1
+<input type="checkbox" class='py-input' id="ChiLLSL2">中文SL2
+<input type="checkbox" class='py-input' id="ChiLLSL3">中文SL3
+<input type="checkbox" class='py-input' id="ChiB">中文B
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="PE1">体育1
+<input type="checkbox" class='py-input' id="PE2">体育2
+<input type="checkbox" class='py-input' id="PE3">体育3
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="SAT/ACT">SAT/ACT
+<input type="checkbox" class='py-input' id="IELTS1">雅思1
+<input type="checkbox" class='py-input' id="IELTS2">雅思2
+<input type="checkbox" class='py-input' id="TOEFL">托福
+<input type="checkbox" class='py-input' id="MathEx">数学思维拓展
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="MathAAHL1">数学AAHL1
+<input type="checkbox" class='py-input' id="MathAAHL2">数学AAHL2
+<input type="checkbox" class='py-input' id="MathAASL">数学AASL
+<input type="checkbox" class='py-input' id="MathAIHL1">数学AIHL1
+<input type="checkbox" class='py-input' id="MathAIHL2">数学AIHL2
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="EngA">英语A
+<input type="checkbox" class='py-input' id="EngBHL">英语BHL
+<input type="checkbox" class='py-input' id="EngBSL1">英语BSL1
+<input type="checkbox" class='py-input' id="EngBSL2">英语BSL2
+<input type="checkbox" class='py-input' id="EngBSL3">英语BSL3
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="EngTOK1">英语TOK1
+<input type="checkbox" class='py-input' id="EngTOK2">英语TOK2
+<input type="checkbox" class='py-input' id="ChiTOK1">中文TOK1
+<input type="checkbox" class='py-input' id="ChiTOK2">中文TOK2
+<input type="checkbox" class='py-input' id="ChiTOK3">中文TOK3
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="PsySL">心理SL
+</div>
+<div class="subject">
+<input type="checkbox" class='py-input' id="VA">视觉艺术
+</div>
+<input type="submit" id="submitbutton" class="py-button" py-click="read_form()">submit</button>
+</form>
+</body>
+</html>
